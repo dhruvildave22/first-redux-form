@@ -1,12 +1,15 @@
 
 import React, { Component } from 'react';
-import PostComponent from './components';
-
 
 class App extends Component {
   render() {
     return (
-      <PostComponent />
+      <div className="App">
+        <div className="navbar">
+          <h2 className="center ">Home</h2>
+        </div>
+        <p className="post_heading">Welcome to React Redux Form</p>
+      </div>
     );
   }
 }

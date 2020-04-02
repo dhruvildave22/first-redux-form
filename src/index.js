@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
-import App from './App';
 
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
+import PersistentDrawerLeft from './components/nav-bar';
 
-import postReducer from './reducers/postReducer';
+const routing = (
+  <Router>
+    <PersistentDrawerLeft />
+  </Router >
+)
 
-
-const store = createStore(postReducer);
-
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>, document.getElementById('root'));
+ReactDOM.render(routing, document.getElementById('root'));
