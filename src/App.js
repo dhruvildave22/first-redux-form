@@ -8,7 +8,7 @@ class App extends Component {
         <div className="navbar">
           <h2 className="center ">Home</h2>
         </div>
-        <p className="post_heading">Welcome to React Redux Form</p>
+        <p className="post_heading">Welcome to React Redux CRUD</p>
       </div>
     );
   }
